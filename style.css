@@ -7,19 +7,43 @@ html, body {
 }
 
 #intro {
+    min-height: 50vw;
     height: 100vh;
-    background-color: rgb(131, 197, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("rigel.jpg");
+    background-size: cover;
+    background-position: top 40px center;
+}
+
+.intro-decor {
+    width: 100vw;
+    height: 130px;
+    background-color: transparent;
+    background-image: url("decor.svg");
+    background-size: cover;
+    background-position: bottom center;
+    filter: drop-shadow(0 0 30px #333);
+}
+
+.intro-decor-bot {
+    bottom: 0;
+    width: 100vw;
+    background: white;
+    box-shadow: 0 -12px 10px #3333;
 }
 
 #title-box-outer {
-    position: absolute;
-    top: 10vh;
-    width: 100%;
-    text-align: center;
+    height: 130px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #title-box-outer div {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
 }
 
@@ -33,7 +57,7 @@ html, body {
 @media (min-width: 500px) {
     #title {
         margin: -16pt 0 -12pt 0;
-        font-size: 50pt;
+        font-size: 45pt;
     }
     .vote {
         font-size: 15pt;
@@ -54,13 +78,6 @@ html, body {
     align-self: flex-end;
 }
 
-#nav-outer {
-    position: absolute;
-    bottom: 10vh;
-    width: 100%;
-    margin: auto;
-}
-
 #nav {
     list-style-type: none;
     padding: 0;
@@ -77,7 +94,6 @@ html, body {
 #nav li {
     margin: 4pt;
     padding: 8pt;
-    font-family: 'Raleway SemiBold';
 }
 
 #nav a {
