@@ -96,14 +96,24 @@ html, body {
     padding: 8pt;
 }
 
-#nav a {
-    color: black;
+a {
+    color: rgb(3, 26, 77);
     text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: rgb(230, 149, 0);
 }
 
 .highlighted {
-    border: 3px solid black;
+    border: 3px solid rgb(3, 26, 77);
     border-radius: 6px;
+    transition: border-color 0.3s ease;
+}
+
+.highlighted:hover {
+    border-color: rgb(230, 149, 0);
 }
 
 .content {
@@ -112,31 +122,43 @@ html, body {
     max-width: 700px;
 }
 
+#pics {
+    background-color: rgb(3, 26, 77);
+    overflow: auto;
+}
+
 #picbox {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.image {
-    margin: 8px;
-    width: 200px;
+#picbox a {
     flex: 1 0 auto;
+    width: 200px;
+    margin: 8px;
+}
+
+.image {
     display: flex;
     align-items: flex-end;
     height: 200px;
-    background-color: red;
+    background-size: cover;
+    background-position: center;
 }
 
 .label {
     vertical-align: inherit;
     padding: 7pt 7pt;
+    margin-bottom: 8px;
+    width: 100%;
     color: white;
-    background-color: #505050D0;
+    background-color: rgba(3, 26, 77, 0.7);
 }
 
 #footer {
-    background-color: rgb(131, 197, 255);
+    color: white;
+    background-color: rgb(230, 149, 0);
     overflow: auto;
     font-size: 10pt;
     text-align: center;
