@@ -9,33 +9,22 @@ html, body {
 #intro {
     min-height: 50vw;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     background-image: url("rigel.jpg");
     background-size: cover;
-    background-position: top 40px center;
+    background-position: top center;
 }
 
-.intro-decor {
-    width: 100vw;
-    height: 130px;
-    background-color: transparent;
-    background-image: url("decor.svg");
-    background-size: cover;
-    background-position: bottom center;
-    filter: drop-shadow(0 0 30px #333);
-}
-
-.intro-decor-bot {
-    bottom: 0;
-    width: 100vw;
-    background: white;
-    box-shadow: 0 -12px 10px #3333;
+#intro-titlebar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 0;
+    width: 90vw;
+    margin: auto;
 }
 
 #title-box-outer {
-    height: 130px;
     padding: 5px;
     display: flex;
     justify-content: center;
@@ -47,20 +36,19 @@ html, body {
     flex-direction: column;
 }
 
-@media (max-width: 500px) {
-    #title {
-        margin: -8pt 0;
-        font-size: 30pt;
+@media screen and (max-width: 900px) {
+    #intro-titlebar {
+        flex-direction: column;
     }
 }
 
-@media (min-width: 500px) {
+@media screen and (min-width: 400px) {
     #title {
-        margin: -16pt 0 -12pt 0;
-        font-size: 45pt;
+        margin: -10pt 0 -9pt 0;
+        font-size: 30pt;
     }
     .vote {
-        font-size: 15pt;
+        font-size: 13pt;
     }
 }
 
@@ -81,10 +69,7 @@ html, body {
 #nav {
     list-style-type: none;
     padding: 0;
-    margin: auto;
-    width: 80%;
-    max-width: 700px;
-
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -96,24 +81,30 @@ html, body {
     padding: 8pt;
 }
 
+
+
+
+
+
 a {
-    color: rgb(3, 26, 77);
+    color: #29356d;
     text-decoration: none;
     transition: color 0.3s ease;
+    font-weight: 600;
 }
 
 a:hover {
-    color: rgb(230, 149, 0);
+    color: #FF7F00;
 }
 
 .highlighted {
-    border: 3px solid rgb(3, 26, 77);
+    border: 3px solid #0c1c4a;
     border-radius: 6px;
     transition: border-color 0.3s ease;
 }
 
 .highlighted:hover {
-    border-color: rgb(230, 149, 0);
+    border-color: #FF7F00;
 }
 
 .content {
@@ -122,8 +113,57 @@ a:hover {
     max-width: 700px;
 }
 
-#pics {
-    background-color: rgb(3, 26, 77);
+
+
+
+
+form#nameemail {
+    display: flex;
+    height: 40pt;
+}
+
+form#nameemail input {
+    display: block;
+    flex-grow: 1;
+    padding: 8pt;
+    font-size: 10pt;
+}
+
+form#nameemail button {
+    display: block;
+    flex-grow: 0.4;
+    background: #8b9adb;
+    font-family: 'Raleway';
+    font-weight: 600;
+    font-size: 12pt;
+    color: #0c1c4a;
+    transition: color 0.3s ease;
+}
+
+form#nameemail button:hover {
+    background: #eff2ff;
+    color: #FF7F00;
+}
+
+.nameemail-ackbox {
+    display: none;
+    padding: 5pt;
+    text-align: center;
+}
+
+
+
+
+
+.lightbluebg {
+    color: white;
+    background-color: #273f88;
+    overflow: auto;
+}
+
+.bluebg {
+    color: white;
+    background-color: #0c1c4a;
     overflow: auto;
 }
 
@@ -149,17 +189,31 @@ a:hover {
 
 .label {
     vertical-align: inherit;
+    text-align: center;
     padding: 7pt 7pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 30%;
     margin-bottom: 8px;
     width: 100%;
     color: white;
     background-color: rgba(3, 26, 77, 0.7);
 }
 
+
+
+
+
+
 #footer {
-    color: white;
-    background-color: rgb(230, 149, 0);
     overflow: auto;
     font-size: 10pt;
     text-align: center;
+}
+
+.paybox {
+    display: inline-block;
+    padding: 20pt;
+    border: 2px solid white;
 }

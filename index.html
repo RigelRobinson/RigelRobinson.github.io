@@ -5,20 +5,18 @@
     <title>Rigel Robinson | Insert slogan here</title>
     <link rel="stylesheet" href="style.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="//code.jquery.com/jquery-3.3.1.min.js" type="text/javascript"></script>
 </head>
 
 <body>
     <div id="intro">
-        <div class="intro-decor">
+        <div id="intro-titlebar">
             <div id="title-box-outer">
                 <div>
-                    <span class="flex-start vote">Vote</span>
                     <h1 id="title">Rigel Robinson</h1>
                     <span class="flex-end vote">for Berkeley City Council</span>
                 </div>
             </div>
-        </div>
-        <div class="intro-decor-bot">
             <ul id="nav">
                 <a href="">
                     <li>Meet Rigel</li>
@@ -30,18 +28,21 @@
                     <li>Endorsements</li>
                 </a>
                 <a href="">
-                    <li class="highlighted">Donate</li>
+                    <li>Take Action</li>
                 </a>
                 <a href="">
-                    <li>Take Action</li>
+                    <li class="highlighted">Donate</li>
                 </a>
             </ul>
         </div>
     </div>
     <div class="content">
-        <h1>Rigel: Your student advocate</h1>
+        <h1>My story</h1>
         <p>
             During his four years at the University of California, Berkeley, Rigel Robinson dedicated himself to fighting for students, from city hall to Washington, D.C. Now, he’s running to be their voice on the Berkeley City Council.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ornare ultrices dolor a blandit. Suspendisse finibus tellus justo, pulvinar imperdiet lacus varius a. Donec non dapibus neque. Mauris vel tortor nec diam luctus hendrerit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec porta sodales sodales.
         </p>
 
         <p style="text-align: right;">
@@ -52,32 +53,37 @@
             </a>
         </p>
     </div>
-    <div id="pics">
-        <div id="picbox" class="content">
-            <a href="">
-                <div class="image highlighted" style="background-image: url('causes.jpg');">
-                    <div class="label">What can Rigel do for Berkeley's 7th district?</div>
-                </div>
-            </a>
-            <a href="">
-                <div class="image highlighted" style="background-image: url('support.jpg');">
-                    <div class="label">Who stands with Rigel?</div>
-                </div>
-            </a>
-            <a href="">
-                <div class="image highlighted" style="background-image: url('students.jpg');">
-                    <div class="label">How can I help Rigel fight for students?</div>
-                </div>
-            </a>
+    <div class="lightbluebg">
+        <div class="content">
+            <h1>Join the campaign:</h1>
+            <form id="nameemail">
+                <input type="text" name="name" placeholder="Name" class="highlighted" />
+                <input type="text" name="email" placeholder="Email" class="highlighted" />
+                <button class="highlighted" type="submit" id="nameemail-submit">Submit</button>
+                <img class="nameemail-ackbox" id="nameemail-spinner" src="oval.svg"></img>
+            </form>
+            <div class="nameemail-ackbox" id="nameemail-ackmal">
+                Whoops! Looks like you missed a field.
+            </div>
+            <div class="nameemail-ackbox" id="nameemail-ackgood">
+                Thanks! We'll keep you updated.
+            </div>
+            <div class="nameemail-ackbox" id="nameemail-ackbad">
+                Whoops! Looks like we're having issues right now. Try again in a few minutes!
+            </div>
         </div>
     </div>
-    <div id="footer">
+    <div id="footer" class="bluebg">
         <div class="content">
             <p>
-                © 2018 The Rigel Robinson Campaign
+                Rigel Robinson for Berkeley City Council 2018.
             </p>
+            <p><span class="paybox">
+                Paid for by Rigel Robinson for Berkeley City Council 2018. FPPC ID Pending.
+            </span></p>
         </div>
     </div>
-</body>
 
+    <script src="nameemail.js" type="text/javascript"></script>
+</body>
 </html>
