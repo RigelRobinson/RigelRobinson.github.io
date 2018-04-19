@@ -119,7 +119,10 @@ a:hover {
 
 form#nameemail {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     height: 40pt;
+    width: 100%;
 }
 
 form#nameemail input {
