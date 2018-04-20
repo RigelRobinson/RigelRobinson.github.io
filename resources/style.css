@@ -9,7 +9,7 @@ html, body {
 #intro {
     min-height: 50vw;
     height: 100vh;
-    background-image: url("rigel.jpg");
+    background-image: url("/assets/rigel.jpg");
     background-size: cover;
     background-position: top center;
 }
@@ -186,6 +186,7 @@ form#nameemail button:hover {
 
 
 
+
 .blurcontainer {
     position: relative;
     overflow: hidden;
@@ -231,8 +232,9 @@ form#nameemail button:hover {
 
 
 
+
 .meetbg {
-    background-image: url('students.jpg');
+    background-image: url('/assets/students.jpg');
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -243,44 +245,6 @@ form#nameemail button:hover {
     padding: 40px;
     padding-top: 0;
 }
-
-
-
-
-/* #picbox {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-#picbox a {
-    flex: 1 0 auto;
-    width: 200px;
-    margin: 8px;
-}
-
-.image {
-    display: flex;
-    align-items: flex-end;
-    height: 200px;
-    background-size: cover;
-    background-position: center;
-}
-
-.label {
-    vertical-align: inherit;
-    text-align: center;
-    padding: 7pt 7pt;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 30%;
-    margin-bottom: 8px;
-    width: 100%;
-    color: white;
-    background-color: rgba(3, 26, 77, 0.7);
-} */
-
 
 
 
