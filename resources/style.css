@@ -1,9 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Lato|Oswald:300,400,500');
-
-@font-face {
-    font-family: "Bebas Neue";
-    src: url("/resources/BebasNeue-Regular.woff") format("woff");
-}
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:400,700|Oswald:300,400,500');
 
 html, body {
     margin: 0;
@@ -85,6 +80,10 @@ a:hover {
     color: #ffd488;
 }
 
+#nav a:hover {
+    color: #ffd488;
+}
+
 .highlighted {
     border: 3px solid #0c3b66;
     border-radius: 6px;
@@ -119,6 +118,7 @@ form#nameemail input {
     padding: 8pt;
     font-size: 10pt;
     margin: 0 2px;
+    background: #FFFFFFE0;
 }
 
 form#nameemail button {
@@ -235,6 +235,10 @@ form#nameemail button:hover {
     display: flex;
     padding: 40px;
     padding-top: 0;
+}
+
+.meetsp {
+    height: 10px;
 }
 
 
