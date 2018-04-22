@@ -25,17 +25,7 @@ h1,h2,h3,h4,h5,h6 {
     background-position: 50% 70%;
 }
 
-#intro-titlebar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 30px 0;
-    width: 90vw;
-    margin: auto;
-}
-
-#wide-titlebar {
+#titlebar {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -46,38 +36,11 @@ h1,h2,h3,h4,h5,h6 {
     margin: auto;
 }
 
-#title-box-outer {
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#title-box-outer div {
-    display: flex;
-    flex-direction: column;
-}
-
-@media screen and (max-width: 900px) {
-    #intro-titlebar {
-        flex-direction: column;
-    }
-}
-
-@media screen and (min-width: 400px) {
-    #title {
-        margin: -10pt 0 -9pt 0;
-        font-size: 30pt;
-    }
-    .vote {
-        font-size: 13pt;
-    }
-}
-
-#title {
-    font-family: 'Abril Fatface';
-    white-space: nowrap;
-    display: inline;
+.logo {
+    background-image: url("/assets/logo-dark.png");
+    width: 174px;
+    height: 70px;
+    background-size: contain;
 }
 
 .flex-start {
@@ -116,7 +79,6 @@ a {
     color: #0c3b66;
     text-decoration: none;
     transition: color 0.3s ease;
-    /* font-weight: 600; */
 }
 
 a:hover {
@@ -162,7 +124,7 @@ form#nameemail input {
 form#nameemail button {
     display: block;
     flex-grow: 0.4;
-    background: #0c3b66;
+    background: transparent;
     border-color: #ffd488;
     font-family: 'Raleway';
     font-weight: 600;
@@ -173,7 +135,7 @@ form#nameemail button {
 }
 
 form#nameemail button:hover {
-    background: #eff2ff;
+    background: #0c3b66;
     color: #ffd488;
 }
 
