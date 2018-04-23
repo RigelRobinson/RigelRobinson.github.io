@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:400,700|Oswald:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Oswald:300,400,500');
 
 html, body {
     margin: 0;
@@ -230,9 +230,9 @@ form#nameemail button:hover {
 
 
 .meetbg {
-    background-image: url('/assets/students.jpg');
+    background-image: url('/assets/grp-meet.jpg');
     background-size: cover;
-    background-position: center;
+    background-position: 50% 30%;
     height: 400px;
 }
 
@@ -253,8 +253,11 @@ form#nameemail button:hover {
 .endorsebg {
     background-image: url('/assets/students.jpg');
     background-size: cover;
-    background-position: center;
     height: 400px;
+}
+
+.endorse-block {
+    column-width: 16em;
 }
 
 
