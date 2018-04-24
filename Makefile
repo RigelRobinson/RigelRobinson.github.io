@@ -11,8 +11,9 @@ meet.html: templates/meet.html templates/titlebar.html templates/footer.html
 	| ./repl.sh /dev/stdin FOOTER templates/footer.html \
 	> meet.html
 
-endorsements.html: templates/endorsements.html templates/titlebar.html templates/footer.html
-	./repl.sh templates/endorsements.html TITLEBAR templates/titlebar.html \
+endorsements.html: templates/endorsements.html templates/endorser-form.html templates/titlebar.html templates/footer.html
+	./repl.sh templates/endorsements.html ENDORSERS templates/endorser-form.html \
+	| ./repl.sh /dev/stdin TITLEBAR templates/titlebar.html \
 	| ./repl.sh /dev/stdin FOOTER templates/footer.html \
 	> endorsements.html
 
