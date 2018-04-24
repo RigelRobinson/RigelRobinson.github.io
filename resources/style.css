@@ -301,7 +301,15 @@ form button:hover {
 }
 
 .endorse-block {
-    column-width: 16em;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -6pt;
+}
+
+.endorse-block p {
+    width: 16em;
+    flex-grow: 1;
+    margin: 6pt;
 }
 
 
