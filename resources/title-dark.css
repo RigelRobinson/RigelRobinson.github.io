@@ -5,3 +5,22 @@
 #nav .highlighted {
     border-color: #0c3b66;
 }
+
+@media screen and (max-width: 700px) {
+    #nav a {
+        color: white;
+    }
+
+    #nav .highlighted {
+        border-color: white;
+    }
+
+    #navchk-btn {
+        background-color: #04213b;
+        color: white;
+    }
+
+    #navchk:checked ~ #navchk-btn {
+        background-color: #0c3b66;
+    }
+}
