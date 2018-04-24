@@ -1,0 +1,7 @@
+.logo {
+    background-image: url("/assets/logo-dark.png");
+}
+
+#nav .highlighted {
+    border-color: #0c3b66;
+}

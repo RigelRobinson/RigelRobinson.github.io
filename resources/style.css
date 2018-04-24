@@ -32,7 +32,6 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .logo {
-    background-image: url("/assets/logo-dark.png");
     width: 174px;
     height: 70px;
     background-size: contain;
@@ -60,14 +59,26 @@ h1,h2,h3,h4,h5,h6 {
     flex-flow: row wrap;
 }
 
+#nav .issues,.action,.endorsements,.meet {
+    border-width: 0;
+    border-bottom-width: 4px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
 #nav li {
     margin: 4pt;
     padding: 8pt;
 }
 
+#nav li span {
+    padding: 1px;
+}
+
 @media screen and (max-width: 700px) {
     #titlebar {
         flex-direction: column;
+        padding-bottom: 0;
     }
 }
 
@@ -91,12 +102,17 @@ a:hover {
 }
 
 .highlighted {
-    border: 3px solid #0c3b66;
+    border-width: 3px;
+    border-style: solid;
     border-radius: 6px;
     transition: border-color 0.3s ease;
 }
 
 .highlighted:hover {
+    border-color: #ffd488;
+}
+
+#nav .highlighted:hover {
     border-color: #ffd488;
 }
 
@@ -232,7 +248,7 @@ form#nameemail button:hover {
 .meetbg {
     background-image: url('/assets/grp-meet.jpg');
     background-size: cover;
-    background-position: 50% 30%;
+    background-position: center top 20%;
     height: 400px;
 }
 

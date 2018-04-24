@@ -1,0 +1,11 @@
+.logo {
+    background-image: url("/assets/logo-light.png");
+}
+
+#nav a {
+    color: white;
+}
+
+#nav .highlighted {
+    border-color: white;
+}
