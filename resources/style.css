@@ -94,6 +94,11 @@ h1,h2,h3,h4,h5,h6 {
         padding: 0 1pt 1pt 1pt;
         text-align: center;
         transition: background-color 0.3s ease;
+
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
     }
 
     #navchk:checked ~ #nav {
@@ -104,6 +109,7 @@ h1,h2,h3,h4,h5,h6 {
         flex-direction: column;
         position: absolute;
         margin: 0;
+        padding: 10px;
         top: 20px;
         right: 40px;
         background-color: #0c3b66F0;
@@ -134,8 +140,7 @@ a:hover {
 }
 
 .highlighted {
-    border-width: 3px;
-    border-style: solid;
+    border: 3px solid #0c3b66;
     border-radius: 6px;
     transition: border-color 0.3s ease;
 }
