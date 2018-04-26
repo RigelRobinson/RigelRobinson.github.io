@@ -10,7 +10,7 @@
 </head>
 
 <body class="bluebg">
-    <div class="studentbg">
+    <div class="studentbg" id="studentbg">
         <div id="titlebar">
             <style>#nav .issues { border-style: solid; }</style>
             %% TITLEBAR %%
@@ -73,6 +73,11 @@
             </div>
         </div>
     </div>
+
+    <script src="resources/bgload.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        loadBg("studentbg", "/assets/students.svg");
+    </script>
 
     %% FOOTER %%
 </body>
