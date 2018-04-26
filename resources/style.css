@@ -284,7 +284,7 @@ form button:hover {
 
 
 .studentbg {
-    background-image: url('/assets/students.mini.png');
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAHCAMAAAAGcixRAAAA0lBMVEVdTAx7WhR8WhRiUA09PgZBRx1+XxSMYxiCZBWdgStsThCDXRaSaRmreCCRbks2PS5VSQpmWClePwxoSw+QW0GaaVCQYEmUbmWWfoZ5Y2NaTTpgW1JsV0hYRzdrSjc/LjJWP0B4WlZeS1hsTE59YFw4HwRQP0OCdmpARE0mICo2LzNLP0U4DgRgSUttWVoAE1clNUFbYhxsaWtfWFlFPkBKS1VyaGRfVE5EQ0daTmuEhYudnpmLhn+Df398eXd/e3uBfIB7eH16eoF7eHiHhomVmaBzArQcAAAAEklEQVQI12NkYIQDLjiLhTwmABWUAJIkVSljAAAAAElFTkSuQmCC");
     background-size: cover;
     background-position: center;
     overflow: hidden;
