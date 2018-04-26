@@ -6,15 +6,17 @@ index.html: templates/index.html templates/nameemail-form.html templates/titleba
 	| ./repl.sh /dev/stdin FOOTER templates/footer.html \
 	> index.html
 
-meet.html: templates/meet.html templates/titlebar.html templates/footer.html
+meet.html: templates/meet.html templates/titlebar.html templates/footer.html templates/disclaimer.html
 	./repl.sh templates/meet.html TITLEBAR templates/titlebar.html \
 	| ./repl.sh /dev/stdin FOOTER templates/footer.html \
+	| ./repl.sh /dev/stdin DISCLAIMER templates/disclaimer.html \
 	> meet.html
 
-endorsements.html: templates/endorsements.html templates/endorser-form.html templates/titlebar.html templates/footer.html
+endorsements.html: templates/endorsements.html templates/endorser-form.html templates/titlebar.html templates/footer.html templates/disclaimer.html
 	./repl.sh templates/endorsements.html ENDORSERS templates/endorser-form.html \
 	| ./repl.sh /dev/stdin TITLEBAR templates/titlebar.html \
 	| ./repl.sh /dev/stdin FOOTER templates/footer.html \
+	| ./repl.sh /dev/stdin DISCLAIMER templates/disclaimer.html \
 	> endorsements.html
 
 action.html: templates/action.html templates/nameemail-form.html templates/titlebar.html templates/footer.html
