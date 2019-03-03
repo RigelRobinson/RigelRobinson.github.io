@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Taviraj:500,700;Roboto:400,300');
+
+html, body {
+   overflow-x: hidden;
+   font-family: "Roboto";
+   font-weight: 400;
+}
+
+h1,h2,h3,h4,h5,h6 {
+   font-family: Taviraj;
+   font-weight: 500;
+}
+
+.site-header {
+   background-color: #0c3b66;
+   background-image: linear-gradient(#0c3b66, darken(#0c3b66, 10));
+
+   .wrapper {
+      text-align: center;
+      width: 100%;
+   }
+   
+   .site-title {
+      margin: 10pt auto;
+      display: inline-block;
+      
+      .site-logo {
+         filter: drop-shadow(0 0 5px black);
+         width: 300px;
+      }
+   }
+
+   .site-nav {
+      
+      @include media-query($on-palm) {
+      }
+      @include media-query-not($on-palm) {
+         background-color: darken(#0c3b66, 10);
+         margin: 0 -9999rem;
+         /* add back negative margin value */
+         padding: 0.25rem 9999rem;
+         padding-top: 10pt;
+         padding-bottom: 10pt;
+      }
+   }
+
+   .imagebar-wrapper {
+      background-color: #FAFAFA;
+      margin: 0 -9999rem;
+      /* add back negative margin value */
+      padding: 0 9999rem;
+      overflow: hidden;
+      
+      .container {
+         display: flex;
+         font-weight: 800;
+      }
+      
+      .text {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+
+         h1 {
+            font-weight: 700;
+         }
+         h2 {
+            font-family: "Roboto";
+            font-weight: 300;
+         }
+      }
+
+      img {
+         filter: drop-shadow(0 0 2px #E0E0E0);
+         height: 250pt;
+      }
+   }
+}
+
+.box-container-h {
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   height: 300pt;
+   margin: 30pt -5pt;
+
+   align-items: stretch;
+   
+   .link-box {
+      text-align: center;
+      vertical-align: bottom;
+      background-color: darkblue;
+      min-width: 180pt;
+      min-height: 45pt;
+
+      margin: 5pt;
+      flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 0;
+
+      color: $grey-color-light;
+      font-size: 18pt;
+      font-weight: 300;
+
+      filter: drop-shadow(0 0 2px #BBB);
+   }
+}
+
+.box-container-v {
+   display: flex;
+   flex-direction: column;
+   min-width: 180pt;
+   min-height: 45pt;
+   flex-grow: 1;
+   flex-shrink: 1;
+   flex-basis: 0;
+
+   .link-box {
+   }
+}
+
+.legislation {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+}
+
+.staff2 {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+}
+
+.person {
+   margin: 10pt;
+   padding: 10pt 10pt;
+   flex-grow: 1;
+   flex-shrink: 0;
+   flex-basis: 300px;
+   box-shadow: 0 0 5px $grey-color-light;
+
+   img {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      box-shadow: 0 0 2px black;
+   }
+}
+
+.page-link b {
+   // border-bottom: 3px solid white;
+}

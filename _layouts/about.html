@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+
+    {%- include header.html -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        
+        {%- for staff in site.staff -%}
+          {%- if staff.main -%}
+            <div class="person">
+              <h1>{{staff.name}}</h1>
+              <p><a href="mailto:{{staff.email}}">{{staff.email}}</a></p>
+              {{staff.content | markdownify}}
+            </div>
+          {%- endif -%}          
+        {%- endfor -%}
+
+        <div class="staff2">
+        {%- for staff in site.staff -%}
+        {%- if staff.main != true -%}
+            <div class="person">
+              <img src="{{staff.photo}}" />
+                <h2>{{staff.name}}</h2>
+                <b>{{staff.title}}</b><br/>
+                <p><a href="mailto:{{staff.email}}">{{staff.email}}</a></p>
+                {{staff.content | markdownify}}
+            </div>
+            {%- endif -%}
+        {%- endfor -%}
+        </div>
+
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>
