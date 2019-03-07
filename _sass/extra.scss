@@ -88,8 +88,7 @@ h1,h2,h3,h4,h5,h6 {
    
    .link-box {
       text-align: center;
-      vertical-align: bottom;
-      background-color: darkblue;
+      border: 7pt solid $grey-color-light;
       min-width: 180pt;
       min-height: 45pt;
 
@@ -100,9 +99,38 @@ h1,h2,h3,h4,h5,h6 {
 
       color: $grey-color-light;
       font-size: 18pt;
-      font-weight: 300;
+      font-weight: 400;
+      overflow: hidden;
+
+      .bg {
+         position: absolute;
+         left: -3px;
+         right: -3px;
+         top: -3px;
+         bottom: -3px;
+         background-color: darkblue;
+         background-size: cover;
+         background-position-x: center;
+         background-position-y: 30%;
+         filter: brightness(0.5) blur(1px);
+      }
+      .label {
+         position: absolute;
+         left: 0;
+         right: 0;
+         bottom: 50%;
+      }
 
       filter: drop-shadow(0 0 2px #BBB);
+   }
+
+   .link-box:hover {
+      .bg {
+         filter: brightness(0.3) blur(1px);
+         -webkit-transition: .2s -webkit-filter ease-in-out;
+         -moz-transition: .2s -moz-filter ease-in-out;
+         transition: .2s filter ease-in-out, .2s -webkit-filter ease-in-out;
+      }
    }
 }
 

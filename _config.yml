@@ -37,6 +37,7 @@ boxlinks:
       link: "/city-services"
     - label: Contact Us
       link: "/contact"
+      img: "/assets/img/interns.png"
 
 header_pages:
   - "about.md"

@@ -12,10 +12,11 @@ layout: default
 
   <div class="box-container-h">
     {%- for column in site.boxlinks -%}
-      <div class="box-container-v">
+      <div class="box-container-v" >
         {%- for boxlink in column -%}
           <a class="link-box" href="{{ boxlink.link }}">
-            <div>{{ boxlink.label }}</div>
+            <div class="bg" style="background-image: url('{{ boxlink.img }}')"></div>
+            <div class="label">{{ boxlink.label }}</div>
           </a>
         {%- endfor -%}
       </div>
