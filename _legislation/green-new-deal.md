@@ -1,5 +1,6 @@
 ---
 name: Support a Green New Deal 
+link: https://www.cityofberkeley.info/Clerk/City_Council/2019/01_Jan/Documents/2019-01-22_Item_18_Support_a_Green_New_Deal.aspx
 from: Mayor Arreguin, and Councilmembers Davila, Harrison, and Robinson 
 financial: None 
 contact: Jesse Arreguin, Mayor, 981-7100

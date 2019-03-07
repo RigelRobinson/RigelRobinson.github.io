@@ -1,5 +1,6 @@
 ---
 name: Camp Kesem Berkeley’s Annual Fundraising Gala
+link: https://www.cityofberkeley.info/Clerk/City_Council/2019/03_Mar/Documents/2019-03-12_Item_16_Camp_Kesem_Berkeley%E2%80%99s_Annual.aspx
 subtitle: Relinquishment of Council Office Budget Funds to General Fund and Grant of Such Fund
 from: Councilmembers Robinson and Davila
 financial: Councilmember's Discretionary Funds - $150

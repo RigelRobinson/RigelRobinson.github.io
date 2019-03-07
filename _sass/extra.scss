@@ -123,6 +123,21 @@ h1,h2,h3,h4,h5,h6 {
    display: flex;
    flex-wrap: wrap;
    justify-content: space-evenly;
+
+   .leglinks {
+      margin-top: -6pt;
+      margin-bottom: 5pt;
+      margin-left: -2pt;
+      margin-right: -2pt;
+
+      .leglink {
+         font-size: 10pt;
+         padding: 2pt 4pt;
+         margin: 0 2pt;
+         border: 1px solid $grey-color-light;
+         border-radius: 5px;
+      }
+   }
 }
 
 .staff2 {

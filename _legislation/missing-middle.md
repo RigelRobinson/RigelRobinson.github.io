@@ -1,5 +1,9 @@
 ---
 name: Missing Middle Report
+link: https://www.cityofberkeley.info/Clerk/City_Council/2019/02_Feb/Documents/2019-02-26_Item_21_Missing_Middle_Report.aspx
+supplemental_links:
+  - https://www.cityofberkeley.info/Clerk/City_Council/2019/02_Feb/Documents/2019-02-26_Supp_1_Reports_Item_22_Rev_Droste_pdf.aspx
+  - https://www.cityofberkeley.info/Clerk/City_Council/2019/02_Feb/Documents/2019-02-26_Supp_2_Reports_Item_21_Rev_Droste_pdf.aspx
 from: Councilmembers Droste, Bartlett, Robinson and Kesarwani
 financial: See report
 contact: Lori Droste, Councilmember, District 8, 981-7180

@@ -1,5 +1,6 @@
 ---
 name: Affirming the City of Berkeley’s Support for the People of Tibet
+link: https://www.cityofberkeley.info/Clerk/City_Council/2019/03_Mar/Documents/2019-03-12_Item_18_Affirming_the_City_of_Berkeley%E2%80%99s.aspx
 from: Councilmembers Robinson and Davila 
 financial: None 
 contact: Rigel Robinson, Councilmember, District 7, 981-7170
