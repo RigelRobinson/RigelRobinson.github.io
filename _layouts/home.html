@@ -22,7 +22,23 @@ layout: default
     {%- endfor -%}
   </div>
 
-  {%- if site.posts.size > 0 -%}
+
+  <h2 class="post-list-heading">{{ page.list_title | default: "News" }}</h2>
+  {% assign newsroom = site.pages | where: 'permalink', '/newsroom/' | first %}
+  <ul class="post-list">
+      {%- for post in newsroom.articles limit:7-%}
+      <li>
+      <span class="post-meta">{{post.publication}}, {{ post.date }}</span>
+      <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.headline }}
+          </a>
+      </h3>
+      </li>
+      {%- endfor -%}
+  </ul>
+
+  <!-- {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "News" }}</h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
@@ -40,8 +56,6 @@ layout: default
       </li>
       {%- endfor -%}
     </ul>
-
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%}
+  {%- endif -%} -->
 
 </div>
