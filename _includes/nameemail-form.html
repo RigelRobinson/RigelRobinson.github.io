@@ -1,0 +1,21 @@
+<form id="newsletter-subscribe">
+    <input type="text" name="name" placeholder="Name" class="highlighted" />
+    <input type="text" name="email" placeholder="Email" class="highlighted" />
+    <button class="highlighted" type="submit" id="newsletter-subscribe-submit">Submit</button>
+    <img class="form-ackbox" id="newsletter-subscribe-spinner" src="assets/img/icons/spinner.svg"></img>
+</form>
+<div class="form-ackbox" id="newsletter-subscribe-ackmal">
+    Whoops! Looks like you missed a field.
+</div>
+<div class="form-ackbox" id="newsletter-subscribe-ackgood">
+    Thanks! We'll keep you updated.
+</div>
+<div class="form-ackbox" id="newsletter-subscribe-ackbad">
+    Whoops! Looks like we're having issues right now. Try again in a few minutes!
+</div>
+
+<script   src="https://code.jquery.com/jquery-3.4.1.min.js"   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="   crossorigin="anonymous"></script>
+<script src="/assets/js/form.js" type="text/javascript"></script>
+<script type="text/javascript">
+    registerFormHandler("newsletter-subscribe");
+</script>

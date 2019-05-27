@@ -23,8 +23,24 @@ layout: default
     {%- endfor -%}
   </div>
 
+  <div id="newsroom-stretchbox">
+      <h2 class="post-list-heading">{{ page.list_title | default: "News" }}</h2>
+      <div id="newsroom-subscribe">
+          <a href="javascript:showForm()"><div id="newsroom-subscribe-text">
+              Subscribe to our newsletter!
+          </div></a>
+          <div id="newsroom-subscribe-form">
+              {%- include nameemail-form.html -%}
+          </div>
+          <script>
+              function showForm() {
+                  $('#newsroom-subscribe-text').hide();
+                  $('#newsroom-subscribe-form').show();
+              }
+          </script>
+      </div>
+  </div>
 
-  <h2 class="post-list-heading">{{ page.list_title | default: "News" }}</h2>
   {% assign newsroom = site.pages | where: 'permalink', '/newsroom/' | first %}
   <ul class="post-list">
       {%- for post in newsroom.articles limit:7-%}
@@ -38,25 +54,5 @@ layout: default
       </li>
       {%- endfor -%}
   </ul>
-
-  <!-- {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "News" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
-  {%- endif -%} -->
 
 </div>

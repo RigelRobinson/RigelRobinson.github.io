@@ -32,9 +32,11 @@ boxlinks:
   -
     - label: Legislation
       link: "/legislation"
+      img: "/assets/img/rigel-podium.png"
   -
     - label: City Resources
       link: "/city-services"
+      img: "/assets/img/kids.png"
     - label: Contact Us
       link: "/contact"
       img: "/assets/img/interns.png"

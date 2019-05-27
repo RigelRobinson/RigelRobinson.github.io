@@ -2,7 +2,7 @@
 
 html, body {
    overflow-x: hidden;
-   font-family: "Roboto";
+//   font-family: "Roboto";
    font-weight: 400;
 }
 
@@ -12,12 +12,14 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .site-header {
-   background-color: #0c3b66;
-   background-image: linear-gradient(#0c3b66, darken(#0c3b66, 10));
 
    .wrapper {
       text-align: center;
-      width: 100%;
+   }
+
+   .real_header {
+       background-color: #0c3b66;
+       background: linear-gradient(135deg, rgba(12,59,102,1) 0%, rgba(8,94,115,1) 100%);
    }
    
    .site-title {
@@ -65,7 +67,7 @@ h1,h2,h3,h4,h5,h6 {
             font-weight: 700;
          }
          h2 {
-            font-family: "Roboto";
+            font-family: $base-font-family;
             font-weight: 300;
          }
       }
@@ -82,7 +84,7 @@ h1,h2,h3,h4,h5,h6 {
    flex-direction: row;
    flex-wrap: wrap;
    height: 300pt;
-   margin: 30pt -5pt;
+   margin: 60pt -5pt;
 
    align-items: stretch;
    
@@ -98,27 +100,30 @@ h1,h2,h3,h4,h5,h6 {
       flex-basis: 0;
 
       color: $grey-color-light;
-      font-size: 18pt;
+      font-size: 22pt;
       font-weight: 400;
       overflow: hidden;
 
       .bg {
-         position: absolute;
+         position: relative;
+         /*
          left: -3px;
          right: -3px;
          top: -3px;
          bottom: -3px;
+         */
+         height: 100%;
          background-color: darkblue;
          background-size: cover;
          background-position-x: center;
          background-position-y: 30%;
-         filter: brightness(0.5) blur(1px);
+         filter: brightness(0.5) blur(1.5px);
       }
       .label {
-         position: absolute;
+         position: relative;
          left: 0;
          right: 0;
-         bottom: 50%;
+         bottom: 60%;
       }
 
       filter: drop-shadow(0 0 2px #BBB);
@@ -182,14 +187,97 @@ h1,h2,h3,h4,h5,h6 {
    flex-basis: 300px;
    box-shadow: 0 0 5px $grey-color-light;
 
-   img {
+   img, .img {
       display: block;
       width: 100%;
       margin-bottom: 10px;
       box-shadow: 0 0 2px black;
    }
+
+   .img {
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+   }
 }
 
 .page-link b {
    // border-bottom: 3px solid white;
+}
+
+
+#newsroom-stretchbox {
+    margin: 0 -9999rem;
+    /* add back negative margin value */
+    padding: 20pt 9999rem;
+    margin-bottom: 20pt;
+
+    background-color: $brand-color;
+    color: white;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        color: white;
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+    #newsroom-subscribe-text {
+        padding: 5pt;
+        border: 2px solid white;
+        border-radius: 3pt;
+    }
+
+    #newsroom-subscribe-form {
+        display: none;
+    }
+}
+
+
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+
+form input {
+    display: block;
+    flex-grow: 1;
+    padding: 8pt;
+    font-size: 10pt;
+    margin: 2px 2px;
+    background: rgba(255, 255, 255, 0.878);
+
+    border-radius: 3pt;
+}
+
+form button {
+    display: block;
+    flex-grow: 0.4;
+    background: transparent;
+    border-color: #ffd488;
+    font-weight: 600;
+    font-size: 12pt;
+    color: #ffd488;
+    transition: color 0.3s ease;
+    margin: 2px 2px;
+
+    border-radius: 3pt;
+}
+
+form button:hover {
+    background: #0c3b66;
+    color: #ffd488;
+}
+
+.form-ackbox {
+    display: none;
 }

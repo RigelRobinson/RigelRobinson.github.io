@@ -13,6 +13,7 @@
         {%- for staff in site.staff -%}
           {%- if staff.main -%}
             <div class="person">
+              <div class="img" style="background-image: url('{{staff.photo}}')"></div>
               <h1>{{staff.name}}</h1>
               <p><a href="mailto:{{staff.email}}">{{staff.email}}</a></p>
               {{staff.content | markdownify}}
@@ -25,10 +26,10 @@
         {%- if staff.main != true -%}
             <div class="person">
               <img src="{{staff.photo}}" />
-                <h2>{{staff.name}}</h2>
-                <b>{{staff.title}}</b><br/>
-                <p><a href="mailto:{{staff.email}}">{{staff.email}}</a></p>
-                {{staff.content | markdownify}}
+              <h2>{{staff.name}}</h2>
+              <b>{{staff.title}}</b><br/>
+              <p><a href="mailto:{{staff.email}}">{{staff.email}}</a></p>
+              {{staff.content | markdownify}}
             </div>
             {%- endif -%}
         {%- endfor -%}

@@ -14,10 +14,14 @@ To apply to be appointed to a City Commission, contact the Councilmember who has
 
 ### Internships
 
-The spring internship program is closed. Check again soon for updates as we open applications for the summer internship program.
+The summer internship program is closed. Check again soon for updates as we open applications for the fall 2019 program.
 
 Candidates of all backgrounds are welcome to apply, so long as they are passionate about progressive policymaking and the future of the City of Berkeley. Intern tasks include policy research, office management, constituent services, community organizing, and more.
 
 To apply, please send a resume and a cover letter to [RRobinson@CityofBerkeley.info](mailto:rrobinson@cityofberkeley.info) with "Spring Internship - (Your Name)" in the subject line. Your cover letter is an opportunity for you to describe your career and academic goals, your interest in the City of Berkeley and local government, policy ideas to improve the City of Berkeley, and your availability during the course of the internship.
 
 Time commitment for interns is a flexible 4-10 hours per week. Hours are between 9:30 a.m. and 5:30 p.m. every weekday at the City of Berkeley Central Administrative Offices at 2180 Milvia Street, fifth floor. Submissions will be accepted until positions are filled.
+
+### Advocacy
+
+There are a variety of key advocacy organizations & stakeholder groups that influence city legislation by attending city council meetings, writing to the council, or lobbying councilmembers directly. Pick one that suits your interests, and get to work! For neighbors and residents, we recommend you join your local neighborhood association, and for students, we recommend you get involved with the student government, the ASUC. And be sure to follow #berkmtg on Twitter!

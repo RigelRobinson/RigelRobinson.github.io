@@ -17,5 +17,5 @@ You can reach the District 7 office by:
 Soli Alpert  
 [SAlpert@cityofberkeley.info](mailto:SAlpert@cityofberkeley.info)
 
-Varsha Sarveshwar  
-[VSarveshwar@cityofberkeley.info](mailto:VSarveshwar@cityofberkeley.info)
+Angie Chen  
+[AChen@cityofberkeley.info](mailto:AChen@cityofberkeley.info)

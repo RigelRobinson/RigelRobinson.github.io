@@ -1,6 +1,6 @@
 ---
 layout: page
-title: District 7
+title: District Map
 permalink: /district-7/
 ---
 
