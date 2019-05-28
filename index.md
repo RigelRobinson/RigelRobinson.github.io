@@ -13,7 +13,7 @@ UC Berkeley was my dream school, and it was the privilege of a lifetime to earn 
 
 I ran for Berkeley City Council to make sure that you are heard. To ensure that students have a strong advocate who understands the campus community from their perspective, and to ensure that residents have a responsive, effective, and accountable Councilmember who can bridge the gap between university and city, and students and neighbors.
 
-It is a privilege to serve the residents of Berkeley, and I look forward to hearing from you. I hope this website may be a useful resource to you. Check back regularly for updates on our work, and most importantly, sign up for our newsletter!
+It is a privilege to serve the residents of Berkeley, and I look forward to hearing from you. I hope this website may be a useful resource to you. Check back regularly for updates on our work, and most importantly, <a onclick="showForm()" href="#newsroom-stretchbox">sign up for our newsletter</a>!
 
 You can always write me at [RRobinson@CityofBerkeley.info](mailto:RRobinson@CityofBerkeley.info) or call my office at (510) 981-7170.
 

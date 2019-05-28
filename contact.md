@@ -4,6 +4,17 @@ title: Contact Us
 permalink: /contact/
 ---
 
+{::options parse_block_html="true" /}
+<div style="display: flex; flex-wrap: wrap">
+<div style="flex-grow: 1; width: 400pt;">
+
+<img src="/assets/img/interns.png" style="box-shadow: 0px 0px 3px gray;"/>
+
+</div>
+<div style="width: 20pt;"></div>
+<div style="flex-grow: 1; width: 200pt">
+
+
 You can reach the District 7 office by:
 - Phone, at 510-981-7170
 - Email, at [RRobinson@cityofberkeley.info](mailto:rrobinson@cityofberkeley.info)
@@ -19,3 +30,7 @@ Soli Alpert
 
 Angie Chen  
 [AChen@cityofberkeley.info](mailto:AChen@cityofberkeley.info)
+
+
+</div>
+</div>

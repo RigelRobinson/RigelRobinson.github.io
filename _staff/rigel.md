@@ -1,7 +1,7 @@
 ---
 name: Councilmember Rigel Robinson
 main: true
-photo: /assets/img/rigel.jpg
+photo: /assets/img/rigel-talking.jpg
 email: RRobinson@CityofBerkeley.info
 ---
 
