@@ -11,7 +11,7 @@ District 7 encompasses the UC Berkeley campus and most of the Southside neighbor
 
 UC Berkeley was my dream school, and it was the privilege of a lifetime to earn my degree here. But beneath the blue and gold, students and residents alike are struggling every day to make ends meet. Housing, food, and safety are basic needs, and they aren’t always being met. Students are often left out of the conversations that affect them the most, and residents often don’t receive the basic city services they pay for.
 
-I ran for Berkeley City Council to make sure that you are heard. To ensure that students have a strong advocate who understands the campus community from their perspective, and to ensure that residents have a responsive, effective, and accountable Councilmember who can bridge the gap between university and city, and students and neighbors.
+I ran for Berkeley City Council to ensure that students have a strong advocate who understands the campus community from their perspective, and to ensure that residents have a responsive, effective, and accountable Councilmember who can bridge the gap between university and city, and students and neighbors.
 
 It is a privilege to serve the residents of Berkeley, and I look forward to hearing from you. I hope this website may be a useful resource to you. Check back regularly for updates on our work, and most importantly, <a onclick="showForm()" href="#newsroom-stretchbox">sign up for our newsletter</a>!
 

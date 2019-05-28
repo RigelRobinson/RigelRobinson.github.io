@@ -2,8 +2,6 @@
 name: Use of Gender Neutral Language in City Documents
 link: https://www.cityofberkeley.info/Clerk/City_Council/2019/03_Mar/Documents/2019-03-12_Item_17_Use_of_Gender_Neutral_Language.aspx
 from: Councilmember Robinson
-financial: See report
-contact: Rigel Robinson, Councilmember, District 7, 981-7170
 ---
 
 Refer to the City Manager to:
