@@ -16,8 +16,30 @@
 
         {{ content }}
 
+        <h2 class="leghdr">POLICY</h2>
         <div class="legislation">
         {%- for doc in site.legislation -%}
+            <div class="person">
+                <h2>{{doc.name}}</h2>
+                {%- if doc.subtitle -%}
+                  <h3>{{doc.subtitle}}</h3>
+                {%- endif -%}
+
+                <div class="leglinks">
+                  <span class="leglink"><a href="{{doc.link}}">Doc</a></span>
+                  {%- for supp in doc.supplemental_links -%}
+                  <span class="leglink"><a href="{{supp}}">Supplement {{forloop.index}}</a></span>
+                  {%- endfor -%}
+                </div>
+                <p><b>From:</b> {{doc.from}}</p>
+                {{doc.content | markdownify}}
+            </div>
+        {%- endfor -%}
+        </div>
+
+        <h2 class="leghdr">ENDORSEMENTS and RESOLUTIONS</h2>
+        <div class="legislation">
+        {%- for doc in site.resolutions -%}
             <div class="person">
                 <h2>{{doc.name}}</h2>
                 {%- if doc.subtitle -%}
