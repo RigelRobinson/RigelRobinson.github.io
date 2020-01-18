@@ -26,19 +26,9 @@ layout: default
   <div id="newsroom-stretchbox">
       <h2 class="post-list-heading">{{ page.list_title | default: "News" }}</h2>
       <div id="newsroom-subscribe">
-          <a href="javascript:showForm()"><div id="newsroom-subscribe-text">
+          <a href="http://eepurl.com/ggVV81"><div id="newsroom-subscribe-text">
               Subscribe to our newsletter!
           </div></a>
-          <div id="newsroom-subscribe-form">
-              {%- include nameemail-form.html -%}
-          </div>
-          <script>
-              function showForm() {
-                  $('#newsroom-stretchbox .post-list-heading').text("Subscribe to our newsletter!");
-                  $('#newsroom-subscribe-text').hide();
-                  $('#newsroom-subscribe-form').show();
-              }
-          </script>
       </div>
   </div>
 
