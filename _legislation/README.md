@@ -1,3 +1,5 @@
+These legislation items are sorted alphabetically according to file name.
+
 To make a new one, follow the following template:
 
 ```md
